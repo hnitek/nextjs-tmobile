@@ -5,14 +5,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --base-gray-100: #f1f3f8;
+  --base-magenta: #e20074;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 body {
   color: var(--foreground);
@@ -21,7 +23,4 @@ body {
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
 }
