@@ -21,7 +21,7 @@ const ListItem = ({ item }: { item: HnStoryItem }) => {
             <span className="sr-only">Author: </span>
             by <span>{item.by}</span>
           </div>
-          <time dateTime={dateFormatted}>
+          <time dateTime={new Date(item.time * 1000).toISOString()}>
             <span className="sr-only">Published on: </span> {dateFormatted}
           </time>
           <div>
