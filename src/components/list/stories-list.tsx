@@ -1,10 +1,10 @@
-import { HnTopStory } from '@/lib/hn-types';
+import { HnStoryItem } from '@/lib/hn-types';
 import Link from 'next/link';
 
 import ListItem from './list-item';
 
 type Props = {
-  stories: HnTopStory[];
+  stories: HnStoryItem[];
   currentPage: number;
 };
 

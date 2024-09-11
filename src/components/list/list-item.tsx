@@ -1,8 +1,8 @@
 import { formatDate } from '@/lib/date-helper';
-import { HnTopStory } from '@/lib/hn-types';
+import { HnStoryItem } from '@/lib/hn-types';
 import Link from 'next/link';
 
-const ListItem = ({ item }: { item: HnTopStory }) => {
+const ListItem = ({ item }: { item: HnStoryItem }) => {
   const dateFormatted = formatDate(item.time);
   return (
     <article className="flex items-stretch overflow-hidden rounded-md bg-white shadow-sm">
